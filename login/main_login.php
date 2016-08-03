@@ -32,6 +32,12 @@ if (isset($_SESSION['username'])) {
         <div id="message"></div>
       </form>
 
+      <div class="row">
+          <h2 class="col-lg-2 col-lg-push-5">Or
+              <a href="signup.php" class="btn btn-lg btn-primary">Register</a>
+          </h2>
+      </div>
+
     </div> <!-- /container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
