@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc59e7a1-bcde-419e-9c26-eafd03a9bc72" name="Default" comment="Server side ticket booking, passenger list complete">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/booking/BookTicket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/booking/cancelTicket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/booking/getTickets.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-datepicker3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap-datepicker.min.js" />
+    <list default="true" id="bc59e7a1-bcde-419e-9c26-eafd03a9bc72" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/booking/Ticket.php" afterPath="$PROJECT_DIR$/booking/Ticket.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ticketTest.php" afterPath="$PROJECT_DIR$/ticketTest.php" />
     </list>
     <ignored path="AirBooking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
@@ -79,6 +72,19 @@
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#datalist#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="342">
+                <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -133,16 +139,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbconn.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/includes/dbconn.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="passengerTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/passengerTest.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -182,6 +178,7 @@
         <option value="$PROJECT_DIR$/booking/Ticket.php" />
         <option value="$PROJECT_DIR$/booking/cancelTicket.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -378,7 +375,7 @@
       <updated>1470225627008</updated>
       <workItem from="1470225630776" duration="5591000" />
       <workItem from="1470368544696" duration="563000" />
-      <workItem from="1470372864004" duration="25636000" />
+      <workItem from="1470372864004" duration="25889000" />
     </task>
     <task id="LOCAL-00001" summary="Add Register link to login page">
       <created>1470230112085</created>
@@ -415,11 +412,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470390191762</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Site functionality complete">
+      <created>1470407660804</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1470407660804</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31790000" />
+    <option name="totallyTimeSpent" value="32043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="52" width="1467" height="836" extended-state="0" />
@@ -462,7 +466,8 @@
     <MESSAGE value="Update bootstrap version, add ticket booking modal" />
     <MESSAGE value="Store user id to session" />
     <MESSAGE value="Server side ticket booking, passenger list complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Server side ticket booking, passenger list complete" />
+    <MESSAGE value="Site functionality complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Site functionality complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -870,6 +875,17 @@
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#datalist#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="342">
+            <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
