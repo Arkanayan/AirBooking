@@ -5,7 +5,7 @@ class DbConn
     public $conn;
     public function __construct()
     {
-        require 'dbconf.php';
+        require $_SERVER['DOCUMENT_ROOT'].'/AirBooking/login/dbconf.php';
         $this->host = $host; // Host name
         $this->username = $username; // Mysql username
         $this->password = $password; // Mysql password
