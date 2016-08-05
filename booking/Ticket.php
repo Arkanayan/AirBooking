@@ -112,7 +112,7 @@ class Ticket extends DbConn
             return $bookings;*/
 
         $db = new DbConn();
-        $stmt = $db->conn->prepare("SELECT * FROM bookings WHERE cust_id=:cust_id");
+        $stmt = $db->conn->prepare("SELECT * FROM bookings WHERE cust_id=:cust_id ORDER BY id DESC");
         $stmt->bindParam("cust_id", $cust_id);
         $stmt->execute();
 
