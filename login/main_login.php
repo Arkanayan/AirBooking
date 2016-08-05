@@ -16,6 +16,8 @@ if (isset($_SESSION['username'])) {
   </head>
 
   <body>
+  <header class="navbar navbar-fixed-top navbar-brand"><h3>Air Booking</h3></header>
+  <header class="page-header"></header>
     <div class="container">
 
       <form class="form-signin" name="form1" method="post" action="checklogin.php">
