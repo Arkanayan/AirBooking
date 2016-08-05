@@ -15,9 +15,12 @@
       <script src="js/bootstrap-notify.min.js" type="text/javascript"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
       <link href="css/animate.css" rel="stylesheet">
+      <link href="css/jquery-confirm.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css">  </head>
 
         <script src="js/knockout-3.4.0.js"></script>
+        <script src="js/jquery-confirm.js"></script>
+
   <body>
   <header class="navbar navbar-fixed-top navbar-brand"><h3>Air Booking</h3></header>
   <header class="page-header"></header>
@@ -556,40 +559,43 @@
           };
 
           this.cancelTicket = function () {
+            var selfTicket = this;
+              $.confirm({
+                  title: 'Are you sure?' ,
+                  content: 'Do you really want to cancel the ticket?',
+                  confirm: function(){
+                      postData = { //Fetch form data
+                          ticket_id: selfTicket.id
+                      };
 
-              if(confirm("Do you want to cancel the ticket ?") == true) {
-                    var self1 = this;
-                  postData = { //Fetch form data
-                      ticket_id: this.id
-                  };
+                      var request;
 
-                  var request;
-
-                  request = $.ajax({
-                      type: "POST",
-                      url: 'booking/cancelTicket.php',
-                      data: postData
-                  });
-
-
-                  request.done(function (response, textStatus, jqXHR){
-                      // show successfully for submit message
-//                    $("#result").html('Submitted successfully');
-                      showNotification("Your ticket has been cancelled", "success");
-                      self.tickets.remove(self1);
-
-                  });
-
-                  /* On failure of request this function will be called  */
-                  request.fail(function (){
-
-                      // show error
-                      showNotification("Your ticket can't be cancelled", "danger");
-
-                  });
+                      request = $.ajax({
+                          type: "POST",
+                          url: 'booking/cancelTicket.php',
+                          data: postData
+                      });
 
 
-              }
+                      request.done(function (response, textStatus, jqXHR){
+
+                          showNotification("Your ticket has been cancelled", "success");
+                          self.tickets.remove(selfTicket);
+
+                      });
+
+                      /* On failure of request this function will be called  */
+                      request.fail(function (){
+
+                          // show error
+                          showNotification("Your ticket can't be cancelled", "danger");
+
+                      });
+                  },
+                  cancel: function(){
+                  }
+              });
+
           };
 
           this.loadBookings = function () {
