@@ -94,7 +94,7 @@ CREATE TABLE `members` (
 --
 
 INSERT INTO `members` (`id`, `username`, `password`, `email`, `verified`, `mod_timestamp`) VALUES
-  ('88730336357a1eb1b4541b', 'arka', '$2y$10$78nK7jLgfXJMFOgiexwaDuw9YTbXYOIg/q8n/Iz.25atvqmFaHpcK', 'arkashet@gmail.com', 1, '2016-08-03 13:01:15');
+  ('88730336357a1eb1b4541b', 'arka', '$2y$10$78nK7jLgfXJMFOgiexwaDuw9YTbXYOIg/q8n/Iz.25atvqmFaHpcK', 'arka@nomail.com', 1, '2016-08-03 13:01:15');
 
 -- --------------------------------------------------------
 
