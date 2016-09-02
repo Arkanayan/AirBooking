@@ -1,9 +1,9 @@
 ## Introduction
-    Demo app for airline ticket booking system written in **PHP**
+    Demo app for airline ticket booking system written in PHP
 ###Features
    * Single Page application
-        * Backend written in PHP
-        * Frontend written in Javascript
+    * Backend written in PHP
+    * Frontend written in Javascript
    * All operations are asynchronous (Using AJAX)
    * Frontend communicates with backend via REST APIs
 
